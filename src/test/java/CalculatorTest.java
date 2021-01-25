@@ -21,4 +21,9 @@ public class CalculatorTest {
     public void canSubtract(){
         assertEquals(6, calculator.subtract(8, 2));
     }
+
+    @Test
+    public void canMultiply(){
+        assertEquals(16, calculator.multiply(8,2));
+    }
 }
