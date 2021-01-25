@@ -9,12 +9,17 @@ public class PrinterTest {
 
     @Before
     public void before(){
-        printer = new Printer(82);
+        printer = new Printer(82, 90);
     }
 
     @Test
     public void shouldHavePaperLeftProp(){
         assertEquals(82, printer.getSheets());
+    }
+
+    @Test
+    public void shouldHaveToner(){
+        assertEquals(90, printer.getToner());
     }
 
     @Test
