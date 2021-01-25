@@ -20,6 +20,7 @@ public class Printer {
         int printSheets = numCopies * numPages;
         if(sheets >= printSheets){
             sheets -= printSheets;
+            toner -= printSheets;
         }
     }
 }

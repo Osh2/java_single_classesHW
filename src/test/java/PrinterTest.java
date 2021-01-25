@@ -26,11 +26,13 @@ public class PrinterTest {
     public void shouldPrint_true(){
         printer.print(2, 5);
         assertEquals(72, printer.getSheets());
+        assertEquals(80, printer.getToner());
     }
 
     @Test
     public void shouldPrint_false(){
         printer.print(20, 15);
         assertEquals(82, printer.getSheets());
+        assertEquals(90, printer.getToner());
     }
 }
