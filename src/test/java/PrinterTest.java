@@ -16,4 +16,16 @@ public class PrinterTest {
     public void shouldHavePaperLeftProp(){
         assertEquals(82, printer.getSheets());
     }
+
+    @Test
+    public void shouldPrint_true(){
+        printer.print(2, 5);
+        assertEquals(72, printer.getSheets());
+    }
+
+    @Test
+    public void shouldPrint_false(){
+        printer.print(20, 15);
+        assertEquals(82, printer.getSheets());
+    }
 }
